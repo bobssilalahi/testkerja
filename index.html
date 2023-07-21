@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+    <style>
+        body {
+          background-color: black;
+          color: white;
+          font-size: 0.9em;
+          font-family: 'Times New Roman', Times, serif;
+          word-spacing: 0.35em;
+          line-height: 5px;
+        }
+        </style>
+</head>
+<body>
+<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus corrupti ullam? Officia commodi culpa numquam qui. Quod eius tempore voluptates ratione harum incidunt optio, qui vitae explicabo minus maiores facilis impedit enim nam perferendis accusantium repellendus magni porro sit, id nemo assumenda. Id tempora culpa quae est neque quos eveniet, quisquam consequatur? Repellendus, accusantium eum. Non incidunt iste facilis cumque accusantium ex? Maxime repellendus facilis deleniti, omnis nisi quisquam accusamus. Cupiditate eius consequatur non enim nemo quaerat voluptas unde suscipit deleniti, labore ducimus repellendus accusamus repudiandae. Saepe ullam quas iusto, maiores odio obcaecati. Odit suscipit optio repellendus qui dolorum -->
+<script>
+
+    document.writeln("<p>[</p>")
+    loopi:
+        for(let i = 1; i<=10; i++){
+            loopj:
+            for(let j = 1; j<=100; j++) {
+                if (j>10){
+                    continue loopi;
+                }
+                document.writeln("&emsp;{")
+                document.writeln(`<p>&emsp;&emsp;"userId" : ${i},</p>`)
+                document.writeln(`<p>&emsp;&emsp;"id" : ${j},</p>`)
+                document.writeln(`<p>&emsp;&emsp;"title" : "et fugit quas eum in in aperiam quod",</p>`) 
+                document.writeln(`<p>&emsp;&emsp;"body" : "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totamnostrum rerum est autem sunt rem eveniet architecto"</p>`)
+                document.writeln("<p>&emsp;},</p>")
+            }
+        }
+
+        document.writeln("]")
+
+</script>
+</body>
+</html>
